@@ -16,8 +16,9 @@
     $div = $_GET["div"];
 
     switch ($op){
-        case ($op == ("soma"));
-        echo $n1 + $n2; 
+        case ($op == "soma");
+        echo $n1 + $n2;
+        break ;
     }
     ?>
 </body>
