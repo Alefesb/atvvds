@@ -10,15 +10,28 @@
     $n1 = $_GET["n1"];
     $n2 = $_GET["n2"];
     $op = $_GET["op"];
-    $soma = $_GET["soma"];
-    $sub = $_GET["sub"];
-    $mult = $_GET["mult"];
-    $div = $_GET["div"];
+    
 
     switch ($op){
         case ($op == "soma");
-        echo $n1 + $n2;
-        break ;
+        $soma = $n1 + $n2;
+        echo($soma);
+        break;
+
+        case ($op == "sub");
+        $sub = $n1 - $n2;
+        echo($sub);
+        break;
+
+        case ($op == "div");
+        $div = $n1 / $n2;
+        echo($div);
+        break;
+
+        case ($op == "mult");
+        $mult = $n1 * $n2;
+        echo($mult);
+        break;
     }
     ?>
 </body>
